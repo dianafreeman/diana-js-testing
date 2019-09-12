@@ -1,8 +1,8 @@
 {
-  "name": "test-setup-demo",
+  "name": "js-testing-guide",
   "main": "main.js",
   "scripts": {
-    "test": "./node_modules/.bin/mocha tests/*.js --watch --require @babel/register",
+    "test": "./node_modules/.bin/mocha tests/*.js --watch --require @babel/register ",
     "start": "npx @babel/node --require @babel/register main.js",
     "dev": "grunt"
   },
@@ -28,9 +28,12 @@
     "grunt-postcss": "^0.9.0",
     "grunt-sass": "^3.0.2",
     "jsdom": "^15.1.1",
-    "mocha": "^6.1.4"
+    "mocha": "^6.1.4",
+    "mocha-jsdom": "^2.0.0",
+    "sinon": "^7.4.2"
   },
   "dependencies": {
+    "jsdom-global": "^3.0.2",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
